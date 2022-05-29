@@ -21,16 +21,16 @@ try
 	{
 		if($query->rowCount()<1)	//如果数据库中找不到对应数据
 		{
-			echo"<script type='text/javascript'>alert('账号或密码错误'); location='sign.php';</script>";  
+			echo " <script type='text/javascript'>alert('账号或密码错误'); location='sign.php';</script> ";  
 		}
 		else
 		{	
 	//增加密码错误后错误次数和锁定功能
 	//登录成功后错误次数归零，跳转到对应页面
-			$reset="UPDATE userforP.userforP SET Ulogtimes=0 WHERE Uname = '$name'";
-			$stmt = $conn->prepare($reset);
-			$count = $stmt->execute();//执行预处理语句
-			echo"<script type='text/javascript'>alert('登陆成功');location='logok.html';</script>";  
+			// $reset="UPDATE userforP.userforP SET Ulogtimes=0 WHERE Uname = '$name'";
+			// $stmt = $conn->prepare($reset);
+			// $count = $stmt->execute();//执行预处理语句
+			echo"<script type='text/javascript'>alert('登陆成功');location='loged.php';</script>";  
 		}
 	}
 	else
@@ -38,6 +38,7 @@ try
 		echo "Query failed\n";
 	}
 	$conn = null; // 关闭连接
+	
 }
 catch(PDOException $e)
 {

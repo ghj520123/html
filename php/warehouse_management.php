@@ -11,7 +11,14 @@ session_start();
 	<link href="../css/font-awesome.css" rel="stylesheet">
 	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="../js/google-maps.js"></script>
-	<script>$(document).ready(function () { $(".vertical-nav").verticalnav({ speed: 400, align: "left" }); });</script>
+	<script>
+		$(document).ready(function() {
+			$(".vertical-nav").verticalnav({
+				speed: 400,
+				align: "left"
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -48,7 +55,7 @@ session_start();
 				<li><a href="http://www.internetke.com/"><i class="icon-briefcase"></i>入库管理
 						<span class="submenu-icon"></span></a>
 					<ul>
-						<li><a href="http://www.internetke.com/">新增入库</a></li>
+						<li><a href="../php/add1.php">新增入库</a></li>
 						<li><a href="http://www.internetke.com/">入库查询<span class="submenu-icon"></span></a>
 							<ul>
 								<li><a href="http://www.internetke.com/">按条件查询</a></li>
@@ -59,18 +66,18 @@ session_start();
 					</ul>
 				</li>
 				<li><a href="http://www.internetke.com/"><i class="icon-briefcase"></i>出库管理
-					<span class="submenu-icon"></span></a>
-				<ul>
-					<li><a href="http://www.internetke.com/">新增出库</a></li>
-					<li><a href="http://www.internetke.com/">出库查询<span class="submenu-icon"></span></a>
-						<ul>
-							<li><a href="http://www.internetke.com/">按条件查询</a></li>
-							<li><a href="http://www.internetke.com/">删除记录</a></li>
-							<li><a href="http://www.internetke.com/">导出/打印</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
+						<span class="submenu-icon"></span></a>
+					<ul>
+						<li><a href="http://www.internetke.com/">新增出库</a></li>
+						<li><a href="http://www.internetke.com/">出库查询<span class="submenu-icon"></span></a>
+							<ul>
+								<li><a href="http://www.internetke.com/">按条件查询</a></li>
+								<li><a href="http://www.internetke.com/">删除记录</a></li>
+								<li><a href="http://www.internetke.com/">导出/打印</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
 				<li><a href="http://www.internetke.com/"><i class="icon-picture"></i>盘点管理
 						<span class="submenu-icon"></span></a>
 					<ul>
